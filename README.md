@@ -9,7 +9,7 @@
 - MySQL - xampp
 
 ### Servidor de Aplicação
-- Node.js v18.x (LTS)
+- Node.js 
 
 ### Linguagens Utilizadas
 - JavaScript (Node.js – back-end)
