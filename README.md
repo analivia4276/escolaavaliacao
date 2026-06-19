@@ -13,8 +13,7 @@
 
 ### Linguagens Utilizadas
 - JavaScript (Node.js – back-end)
-- TypeScript (Prisma)
-- React (front-end)
+- HTML, CSS e JavaScript (front-end simples)
 
 ---
     
@@ -38,3 +37,14 @@
 2. Instale as dependências:
    ```bash
    npm install
+   npx prisma migrate dev
+   npm start
+3. O backend estará disponivel!
+
+### Front-end//web
+1. Entre na pasta `web`
+2. Instale as dependências:
+   ```bash
+   npm install
+   npm run dev
+3. Execute o arquivo `index.html` com live server!
