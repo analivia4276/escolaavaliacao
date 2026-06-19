@@ -16,7 +16,10 @@
 - HTML, CSS e JavaScript (front-end simples)
 
 ---
-    
+
+### Ferramentas de Teste
+- Insomnia (utilizado para testar os endpoints da API)
+
 ## Prints das Telas Principais
 
 ### Tela de Login
