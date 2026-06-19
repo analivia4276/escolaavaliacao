@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades da Turma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h2 id="nomeProfessor"></h2>
+
+        <div>
+            <button onclick="voltarTurmas()">
+                Voltar
+            </button>
+
+            <button onclick="sair()">
+                Sair
+            </button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <h2 id="nomeTurma"></h2>
+
+        <div class="topo">
+
+            <button onclick="abrirModalAtividade()">
+                Cadastrar Atividade
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaAtividades"></tbody>
+
+        </table>
+
+    </main>
+
+    <!-- Modal Cadastro Atividade -->
+
+    <div id="modalAtividade" class="modal oculto">
+
+        <form id="formAtividade">
+
+            <h2>Nova Atividade</h2>
+
+            <input
+                type="text"
+                id="descricao"
+                placeholder="Descrição da atividade"
+                required>
+
+            <div class="botoesModal">
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+
+                <button
+                    type="button"
+                    onclick="fecharModalAtividade()">
+
+                    Cancelar
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

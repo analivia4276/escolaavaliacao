@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 id="nomeProfessor"></h2>
+        <button onclick="sair()"> Sair </button>
+    </header>
+
+    <div class="topo">
+        <button onclick="abrirModalTurma()"> Cadastrar Turma</button>
+    </div>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaTurmas"></tbody>
+        </table>
+    </main>
+
+    <div id="modalTurma" class="modal oculto">
+        <form id="formTurma">
+            <h2>Nova Turma</h2>
+
+            <input type="text" id="nomeTurmaInput" placeholder="Nome da turma" required>
+
+            <button type="submit"> Cadastrar </button>
+
+            <button type="button" onclick="fecharModalTurma()"> Cancelar </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
